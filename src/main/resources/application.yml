@@ -1,0 +1,8 @@
+server:
+  port: 8095
+  servlet:
+    context-path: /email
+
+spring:
+  application:
+    name: email
