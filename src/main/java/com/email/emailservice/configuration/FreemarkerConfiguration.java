@@ -7,6 +7,10 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 @Configuration
 public class FreemarkerConfiguration {
 
+    /**
+     * la configuation de Freemarker pour envoyer les E-Mails.
+     * @return FreeMarkerConfigurer.
+     */
     @Bean
     public FreeMarkerConfigurer freeMarkerConfigurer() {
         FreeMarkerConfigurer freeMarkerConfigurer = new FreeMarkerConfigurer();

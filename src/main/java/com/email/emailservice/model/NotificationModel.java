@@ -8,7 +8,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NotificationModel {
+    /**
+     * Le sujet de la Notification
+     */
     private String subject;
+
+    /**
+     * La personne qui recoit la Notification
+     */
     private String to;
+
+    /**
+     * Le corps du message
+     */
     private String htmlBody;
 }

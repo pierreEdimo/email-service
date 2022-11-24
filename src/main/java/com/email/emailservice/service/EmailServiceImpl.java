@@ -25,6 +25,9 @@ public class EmailServiceImpl implements EmailService {
 
     private final NotificationFeignClient feignClient;
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void sendOrderEmail(OrderEmailDto newEmail) {
         try {
@@ -36,6 +39,9 @@ public class EmailServiceImpl implements EmailService {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void sendConfirmationEmail(ConfirmationEmailDto newEmail) {
         try {
@@ -48,6 +54,9 @@ public class EmailServiceImpl implements EmailService {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void sendUpdateEmail(UpdateEmailDto newEmail) {
         try {
@@ -59,6 +68,14 @@ public class EmailServiceImpl implements EmailService {
         }
     }
 
+    /**
+     * Confirme l'envoie de l'E-mail.
+     *
+     * @param subject Le sujet du Message.
+     * @param to      La personne qui recoit le message.
+     * @param html    Le corps du message.
+     * @throws NotificationException En cas d'erreur.
+     */
     private void confirmSend(String subject, String to, String html) throws NotificationException {
         NotificationModel model = new NotificationModel(
                 subject,
