@@ -25,7 +25,7 @@
             Nous vous remercions de votre achat sur Houla la. Nous vous confirmons que nous avons bien reçu votre
             commande avec les informations ci-dessous.
 
-            Nous vous informerons par e-mail dès que votre commande aura quitté notre centre d'expédition.
+            Nous vous informerons par e-mail dès que votre commande sera en route.
         </p>
         <br>
         <br>
@@ -90,6 +90,8 @@
     </section>
     <hr>
     <section class="right center">
+        <br>
+        <br>
         <p>Pour toute question, veuillez contacter le vendeur via son adresse e-mail: ${sellerEmail}</p>
         <p><b>Contact de Houlala:</b> +237 6 97 59 04 70</p>
     </section>

@@ -14,4 +14,5 @@ public class UpdateEmailDto {
     private String subject;
     private String to;
     private String body;
+    private String sellerEmail;
 }
