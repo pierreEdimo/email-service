@@ -11,10 +11,15 @@
 <div class="email-container">
     <hr>
     <section class="update-container">
+        <br>
+        <br>
+        <br>
         <h1>Houlala</h1>
+        <br>
         <h3 class="title">
                 Nouvelle Commande
             </h3>
+        <br>
         <p>
             Chère (cher) Monsieur/Madame ${lastName} ${firstName}, <br>
             ${body}
