@@ -20,12 +20,12 @@
                 Nouvelle Commande
             </span>
         <p>
-            Chère (cher) commerçant(e) <br>
+            Chère (cher) Monsieur/Madame ${userInformation.lastName} ${userInformation.firstName} <br>
 
-            Nous vous annonçons avec joie que vous avez reçu une commande venant de ${userInformation.lastName}
-            ${userInformation.firstName}.
+            Nous vous remercions de votre achat sur Houla la. Nous vous confirmons que nous avons bien reçu votre
+            commande avec les informations ci-dessous.
 
-            Le Paiement se fait en cash.
+            Nous vous informerons par e-mail dès que votre commande aura quitté notre centre d'expédition.
         </p>
         <br>
         <br>
@@ -90,7 +90,7 @@
     </section>
     <hr>
     <section class="right center">
-        <p>Pour toute question, veuillez contacter l'acheteur via son numero: ${userInformation.phoneNumber}</p>
+        <p>Pour toute question, veuillez contacter le vendeur via son adresse e-mail: ${sellerEmail}</p>
         <p><b>Contact de Houlala:</b> +237 6 97 59 04 70</p>
     </section>
 </div>

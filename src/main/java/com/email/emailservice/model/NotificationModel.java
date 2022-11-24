@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderNotificationModel {
+public class NotificationModel {
     private String subject;
     private String to;
     private String htmlBody;
