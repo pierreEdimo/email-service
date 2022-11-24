@@ -149,5 +149,11 @@
     p {
         text-align: center;
     }
+
+    @media screen AND (max-width: 767px) {
+        .email-container {
+            width: 90%;
+        }
+    }
 </style>
 </html>
