@@ -16,9 +16,9 @@
     <section class="bestaetigung-container center">
         <br>
         <br>
-        <span class="title">
-                Nouvelle Commande
-            </span>
+        <h3 class="title">
+            Nouvelle Commande
+        </h3>
         <p>
             Chère (cher) Monsieur/Madame ${userInformation.lastName} ${userInformation.firstName} <br>
 
@@ -35,9 +35,9 @@
         <br>
         <br>
         <div class="client-container">
-                <span class="small-title">
-                    Adresse de livraison
-                </span>
+            <h4 class="small-title">
+                Adresse de livraison
+            </h4>
             <p>${userInformation.lastName} ${userInformation.firstName}</p>
             <p>${userInformation.phoneNumber}</p>
             <p>${userInformation.streetName},</p>
@@ -135,6 +135,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
     }
 
     .item-content-container {
