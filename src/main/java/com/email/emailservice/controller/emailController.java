@@ -1,5 +1,6 @@
 package com.email.emailservice.controller;
 
+import com.email.emailservice.model.Help;
 import com.email.emailservice.model.dto.ConfirmationEmailDto;
 import com.email.emailservice.model.dto.OrderEmailDto;
 import com.email.emailservice.model.dto.UpdateEmailDto;
@@ -58,5 +59,18 @@ public class emailController {
     @PostMapping("update")
     public void sendUpdateEmail(@RequestBody UpdateEmailDto newEmail) {
         this.service.sendUpdateEmail(newEmail);
+    }
+
+    @Operation(
+            summary = "Envoie un E-mail au du vendeur au fournisseur de Houlala"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(responseCode = "200", description = "L'email a ete envoye avec succes.")
+            }
+    )
+    @PostMapping("help")
+    public void sendHelpEmail(@RequestBody Help newEmail) {
+        this.service.sendHelpEmail(newEmail);
     }
 }

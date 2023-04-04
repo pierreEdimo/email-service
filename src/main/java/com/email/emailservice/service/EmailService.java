@@ -1,5 +1,6 @@
 package com.email.emailservice.service;
 
+import com.email.emailservice.model.Help;
 import com.email.emailservice.model.dto.ConfirmationEmailDto;
 import com.email.emailservice.model.dto.OrderEmailDto;
 import com.email.emailservice.model.dto.UpdateEmailDto;
@@ -25,4 +26,11 @@ public interface EmailService {
      * @param newEmail Les Informations qui sont ecrites dans l'E-mail
      */
     void sendUpdateEmail(UpdateEmailDto newEmail);
+
+    /**
+     * Envoie un message d'aide
+     *
+     * @param newEmail Les informations qui sont ecrites dans l'E-mail
+     */
+    void sendHelpEmail(Help newEmail);
 }
