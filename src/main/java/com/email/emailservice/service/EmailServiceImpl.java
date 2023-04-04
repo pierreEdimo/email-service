@@ -7,7 +7,6 @@ import com.email.emailservice.model.NotificationModel;
 import com.email.emailservice.model.dto.ConfirmationEmailDto;
 import com.email.emailservice.model.dto.OrderEmailDto;
 import com.email.emailservice.model.dto.UpdateEmailDto;
-import freemarker.core.ParseException;
 import freemarker.template.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
